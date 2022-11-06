@@ -29,7 +29,7 @@
 &trans       &kp N4      &kp N0      &kp N1      &kp N2      &kp N3                                 &kp N7       &kp N6      &kp N5      &kp N9      &kp N0         &trans
 &trans       &kp LBRC    &kp LT      &kp LBKT    &kp LPAR    &kp PIPE                               &kp AMPS     &kp RPAR    &kp RBKT    &kp GT      &kp RBRC       &trans
 &trans       &kp BSLH    &kp EXCL    &kp STAR    &kp EQUAL   &kp CARET     &trans        &trans     &kp DLLR     &kp MINUS   &kp PLUS    &trans      &trans         &trans
-                                     &trans      &trans      &trans        &trans        trans      &trans       &trans      &trans     
+                                     &trans      &trans      &trans        &trans        &trans      &trans       &trans      &trans     
 			>; 
 		};
 
