@@ -10,37 +10,57 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
-	keymap {
-		compatible = "zmk,keymap";
+  keymap {
+    compatible = "zmk,keymap";
 
-		default_layer {
-			bindings = <
-&none        &none       &none       &none       &none       &none                                  &none        &none       &none       &none       &none          &none
-&none        &kp Q       &kp W       &kp E       &kp R       &kp T                                  &kp Y        &kp U       &kp I       &kp O       &kp P          &none
-&none        &mt LGUI A  &mt LALT S  &mt LSFT D  &mt LCTL F  &kp G                                  &kp H        &mt RCTL J  &mt RSFT K  &mt RALT L  &mt RGUI SQT   &none
-&none        &kp Z       &kp X       &kp C       &kp V       &kp B         &kp PSCRN     &kp INS    &kp N        &kp M       &kp COMMA   &kp DOT     &kp FSLH       &none
-                                     &none       &kp DEL     &lt 1 ESC     &mt LSFT TAB  &kp RET    &lt 2 SPACE  &kp BSPC    &none
-			>;
-		};
+    default_layer {
+      bindings = <
+        &none        &none       &none       &none       &none       &none                                  &none        &none       &none       &none       &none          &none
+        &none        &kp Q       &kp W       &kp E       &kp R       &kp T                                  &kp Y        &kp U       &kp I       &kp O       &kp P          &none
+        &none        &mt LGUI A  &mt LALT S  &mt LSFT D  &mt LCTL F  &kp G                                  &kp H        &mt RCTL J  &mt RSFT K  &mt RALT L  &mt RGUI SQT   &none
+        &none        &kp Z       &kp X       &kp C       &kp V       &kp B         &kp PSCRN     &kp INS    &kp N        &kp M       &kp COMMA   &kp DOT     &kp FSLH       &none
+                                             &mo 4       &kp DEL     &lt 1 ESC     &mt LSFT TAB  &lt 3 RET  &lt 2 SPACE  &kp BSPC    &tg 4
+      >;
+    };
 
-		sym_layer {
-			bindings = <
-&trans       &trans      &trans      &trans      &trans      &trans                                 &trans       &trans      &trans      &trans      &trans         &trans
-&trans       &kp N4      &kp N0      &kp N1      &kp N2      &kp N3                                 &kp N7       &kp N6      &kp N5      &kp N9      &kp N0         &trans
-&trans       &kp LBRC    &kp LT      &kp LBKT    &kp LPAR    &kp PIPE                               &kp AMPS     &kp RPAR    &kp RBKT    &kp GT      &kp RBRC       &trans
-&trans       &kp BSLH    &kp EXCL    &kp PLUS    &kp MINUS   &kp CARET     &trans        &trans     &kp DLLR     &kp EQUAL   &kp STAR    &trans      &trans         &trans
-                                     &trans      &trans      &trans        &trans        &trans      &trans       &trans      &trans     
-			>; 
-		};
+    sym_layer {
+      bindings = <
+        &trans       &trans      &trans      &trans      &trans      &trans                                 &trans       &trans      &trans      &trans      &trans         &trans
+        &trans       &kp N4      &kp N0      &kp N1      &kp N2      &kp N3                                 &kp N7       &kp N6      &kp N5      &kp N9      &kp N0         &trans
+        &trans       &kp LBRC    &kp LT      &kp LBKT    &kp LPAR    &kp PIPE                               &kp AMPS     &kp RPAR    &kp RBKT    &kp GT      &kp RBRC       &trans
+        &trans       &kp BSLH    &kp EXCL    &kp PLUS    &kp MINUS   &kp CARET     &trans        &trans     &kp DLLR     &kp EQUAL   &kp STAR    &trans      &trans         &trans
+                                             &trans      &trans      &trans        &trans        &trans     &trans       &trans      &trans
+      >;
+    };
 
-		nav_layer {
-			bindings = <
-&trans       &trans      &trans      &trans      &trans      &trans                                 &trans       &trans      &trans      &trans      &trans         &trans
-&trans       &trans      &trans      &trans      &trans      &trans                                 &kp PG_UP    &kp HOME    &kp UP      &kp END     &trans         &trans
-&trans       &trans      &trans      &trans      &trans      &trans                                 &kp PG_DN    &kp LEFT    &kp DOWN    &kp RIGHT   &trans         &trans
-&trans       &trans      &trans      &trans      &trans      &trans        &trans        &trans     &trans       &trans      &trans      &trans      &trans         &trans
-                                     &trans      &trans      &trans        &trans        &trans     &trans       &trans      &trans
-			>; 
-		};
-	};
+    nav_layer {
+      bindings = <
+        &trans       &trans      &trans      &trans      &trans      &trans                                 &trans       &trans      &trans      &trans      &trans         &trans
+        &trans       &trans      &trans      &trans      &trans      &trans                                 &kp PG_UP    &kp HOME    &kp UP      &kp END     &trans         &trans
+        &trans       &trans      &trans      &trans      &trans      &trans                                 &kp PG_DN    &kp LEFT    &kp DOWN    &kp RIGHT   &trans         &trans
+        &trans       &trans      &trans      &trans      &trans      &trans        &trans        &trans     &trans       &trans      &trans      &trans      &trans         &trans
+                                             &trans      &trans      &trans        &trans        &trans     &trans       &trans      &trans
+      >;
+    };
+
+    function_layer {
+      bindings = <
+        &trans       &trans      &trans      &trans      &trans      &trans                                 &trans       &trans      &trans      &trans      &trans      &trans
+        &trans       &trans      &trans      &trans      &trans      &trans                                 &kp F10      &kp F7      &kp F8      &kp F9      &trans      &trans
+        &trans       &trans      &trans      &trans      &trans      &trans                                 &kp F11      &kp F4      &kp F5      &kp F6      &trans      &trans
+        &trans       &trans      &trans      &trans      &trans      &trans        &trans        &trans     &kp F12      &kp F1      &kp F2      &kp F3      &trans      &trans
+                                             &trans      &trans      &trans        &trans        &trans     &trans       &trans      &trans
+      >;
+    };
+
+    media_layer {
+      bindings = <
+        &trans       &trans       &trans       &trans       &trans   &trans                                 &trans       &trans      &trans      &trans      &trans      &trans
+        &trans       &kp C_BRI_UP &kp C_VOL_UP &kp C_BRI_DN &trans   &trans                                 &kp KP_N0    &kp KP_N7   &kp KP_N8   &kp KP_N9   &trans      &trans
+        &trans       &kp C_PREV   &kp C_PP     &kp C_NEXT   &trans   &trans                                 &kp KP_N0    &kp KP_N4   &kp KP_N5   &kp KP_N6   &trans      &trans
+        &trans       &trans       &kp C_VOL_DN &trans       &trans   &trans        &trans        &trans     &kp KP_N0    &kp KP_N1   &kp KP_N2   &kp KP_N3   &trans      &trans
+                                               &trans       &trans   &trans        &trans        &trans     &trans       &trans      &trans
+      >;
+    };
+  };
 };
