@@ -44,6 +44,7 @@
                  58 59 60 61       62 63 64 65
       >;
     };
+
     rh: right_homerow {
       compatible = "zmk,behavior-hold-tap";
       label = "RIGHT_HOMEROW_MOD";
@@ -59,19 +60,50 @@
                  58 59 60 61       62 63 64 65
       >;
     };
+
     com_und: comm_unds {
       compatible = "zmk,behavior-mod-morph";
       label = "COMM_UNDS";
       bindings = <&kp COMM>, <&kp UNDER>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+
     dot_at: dot_at {
       compatible = "zmk,behavior-mod-morph";
       label = "DOT_AT";
       bindings = <&kp DOT>, <&kp AT>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+
   };
+
+    combos {
+      compatible = "zmk,combos";
+      combo_tilde {
+        timeout-ms = <50>;
+        key-positions = <30 31>;
+        layers = <1>;
+        bindings = <&kp TILDE>;
+      };
+      combo_percent {
+        timeout-ms = <50>;
+        key-positions = <31 32>;
+        layers = <1>;
+        bindings = <&kp PERCENT>;
+      };
+      combo_hash {
+        timeout-ms = <50>;
+        key-positions = <37 38>;
+        layers = <1>;
+        bindings = <&kp HASH>;
+      };
+      combo_grave {
+        timeout-ms = <50>;
+        key-positions = <38 39>;
+        layers = <1>;
+        bindings = <&kp GRAVE>;
+      };
+    };
 
   keymap {
     compatible = "zmk,keymap";
