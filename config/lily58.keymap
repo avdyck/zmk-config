@@ -64,7 +64,7 @@
     com_und: comm_unds {
       compatible = "zmk,behavior-mod-morph";
       label = "COMM_UNDS";
-      bindings = <&kp COMM>, <&kp UNDER>;
+      bindings = <&kp COMMA>, <&kp UNDER>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
