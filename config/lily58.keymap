@@ -32,8 +32,8 @@
     lh: left_homerow {
       compatible = "zmk,behavior-hold-tap";
       label = "LEFT_HOMEROW_MOD";
-      tapping-term-ms = <175>;
-      quick-tap-ms = <175>;
+      tapping-term-ms = <135>;
+      quick-tap-ms = <135>;
       flavor = "tap-preferred";
       #binding-cells = <2>;
       bindings = <&kp>, <&kp>;
@@ -47,8 +47,8 @@
     rh: right_homerow {
       compatible = "zmk,behavior-hold-tap";
       label = "RIGHT_HOMEROW_MOD";
-      tapping-term-ms = <175>;
-      quick-tap-ms = <175>;
+      tapping-term-ms = <135>;
+      quick-tap-ms = <135>;
       flavor = "tap-preferred";
       #binding-cells = <2>;
       bindings = <&kp>, <&kp>;
