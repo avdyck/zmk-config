@@ -150,7 +150,7 @@
         &kp DEL      &kp Q       &kp W       &kp E       &kp R       &kp T                                  &kp Y        &kp U       &kp I       &kp O       &kp P          &kp BSPC
         &kp TAB      &h1 LGUI A  &h2 LALT S  &h3 LSFT D  &h4 LCTL F  &kp G                                  &kp H        &h4 RCTL J  &h3 RSFT K  &h2 RALT L  &h1 RGUI SEMI  &kp RET
         &none        &kp Z       &kp X       &kp C       &kp V       &kp B         &kp PSCRN     &kp INS    &kp N        &kp M       &com_und    &dot_at     &kp FSLH       &none
-                                             &mo 4       &none       &qlt 1 ESC    &kp LSFT      &mo 3      &lt 2 SPACE  &none       &tog 4
+                                             &mo 4       &none       &qlt 1 ESC    &qmt LSFT TAB &lt 3 RET  &lt 2 SPACE  &none       &tog 4
       >;
     };
 
@@ -177,9 +177,9 @@
     nav_layer {
       bindings = <
         &trans       &trans      &trans      &trans      &trans      &trans                                 &trans       &trans      &trans      &trans      &trans         &trans
-        &trans       &trans      &trans      &trans      &trans      &trans                                 &trans       &kp HOME    &kp END     &trans      &trans         &trans
-        &trans       &trans      &trans      &trans      &trans      &trans                                 &kp LEFT     &kp DOWN    &kp UP      &kp RIGHT   &trans         &trans
-        &trans       &trans      &trans      &trans      &trans      &trans        &trans        &trans     &trans       &kp PG_DN   &kp PG_UP   &trans      &trans         &trans
+        &trans       &trans      &trans      &trans      &trans      &trans                                 &kp PG_UP    &kp HOME    &kp UP      &kp END     &trans         &trans
+        &trans       &trans      &trans      &trans      &trans      &trans                                 &kp PG_DN    &kp LEFT    &kp DOWN    &kp RIGHT   &trans         &trans
+        &trans       &trans      &trans      &trans      &trans      &trans        &trans        &trans     &trans       &trans      &trans      &trans      &trans         &trans
                                              &trans      &trans      &trans        &trans        &trans     &trans       &trans      &trans
       >;
     };
