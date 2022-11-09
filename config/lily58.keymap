@@ -115,30 +115,30 @@
     //   24 25 26 27 28 29       30 31 32 33 34 35
     //   36 37 38 39 40 41 42 43 44 45 46 47 48 49
     //            50 51 52 53 54 55 56 57
-    combo_tilde {
-      timeout-ms = <50>;
-      key-positions = <26 27>;
-      layers = <1>;
-      bindings = <&kp TILDE>;
-    };
-    combo_percent {
-      timeout-ms = <50>;
-      key-positions = <27 28>;
-      layers = <1>;
-      bindings = <&kp PERCENT>;
-    };
-    combo_hash {
-      timeout-ms = <50>;
-      key-positions = <31 32>;
-      layers = <1>;
-      bindings = <&kp HASH>;
-    };
-    combo_grave {
-      timeout-ms = <50>;
-      key-positions = <32 33>;
-      layers = <1>;
-      bindings = <&kp GRAVE>;
-    };
+    // combo_tilde {
+    //   timeout-ms = <50>;
+    //   key-positions = <26 27>;
+    //   layers = <1>;
+    //   bindings = <&kp TILDE>;
+    // };
+    // combo_percent {
+    //   timeout-ms = <50>;
+    //   key-positions = <27 28>;
+    //   layers = <1>;
+    //   bindings = <&kp PERCENT>;
+    // };
+    // combo_hash {
+    //   timeout-ms = <50>;
+    //   key-positions = <31 32>;
+    //   layers = <1>;
+    //   bindings = <&kp HASH>;
+    // };
+    // combo_grave {
+    //   timeout-ms = <50>;
+    //   key-positions = <32 33>;
+    //   layers = <1>;
+    //   bindings = <&kp GRAVE>;
+    // };
   };
 
   keymap {
@@ -159,7 +159,7 @@
         &trans       &trans      &trans      &trans      &trans      &trans                                 &trans       &trans      &trans      &trans      &trans         &trans
         &trans       &trans      &kp MINUS   &kp TILDE   &kp PLUS    &kp PRCNT                              &kp HASH     &kp LBKT    &kp SQT     &kp RBKT    &trans         &trans
         &trans       &kp EXCL    &kp LT      &kp EQUAL   &kp GT      &kp PIPE                               &kp AMPS     &kp LPAR    &kp DQT     &kp RPAR    &kp BSLH       &trans
-        &trans       &trans      &kp FSLH    &trans      &kp STAR    &kp CARET     &trans        &trans     &kp DLLR     &kp LBRC    &kp GRV     &kp RBRC    &trans         &trans
+        &trans       &trans      &kp FSLH    &trans      &kp STAR    &kp CARET     &trans        &trans     &kp DLLR     &kp LBRC    &kp GRAVE   &kp RBRC    &trans         &trans
                                              &trans      &trans      &trans        &trans        &trans     &trans       &trans      &trans
       >;
     };
