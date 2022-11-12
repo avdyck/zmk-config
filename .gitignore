@@ -1,1 +1,5 @@
 .idea/
+bootloader/
+modules/
+tools/
+zephyr/
